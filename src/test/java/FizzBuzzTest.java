@@ -9,4 +9,10 @@ public class FizzBuzzTest {
         Assertions.assertEquals("1",result);
     }
 
+    @Test
+    public  void  shouldReturnFizzWhenNumberEqual3(){
+        String result = FizzBuzzConverter.convert(3);
+        Assertions.assertEquals("Fizz",result);
+    }
+
 }
