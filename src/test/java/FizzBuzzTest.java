@@ -26,4 +26,9 @@ public class FizzBuzzTest {
         String result = FizzBuzzConverter.convert(5);
         Assertions.assertEquals("Buzz",result);
     }
+    @Test
+    public  void  shouldReturnBuzzWhenNumberMultipleOf5(){
+        String result = FizzBuzzConverter.convert(20);
+        Assertions.assertEquals("Buzz",result);
+    }
 }
