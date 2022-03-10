@@ -31,4 +31,9 @@ public class FizzBuzzTest {
         String result = FizzBuzzConverter.convert(20);
         Assertions.assertEquals("Buzz",result);
     }
+    @Test
+    public  void  shouldReturnFizzBuzzWhenNumberEqual15(){
+        String result = FizzBuzzConverter.convert(15);
+        Assertions.assertEquals("FizzBuzz",result);
+    }
 }
