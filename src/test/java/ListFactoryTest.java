@@ -19,4 +19,10 @@ public class ListFactoryTest {
         IllegalArgumentException exception = Assertions.assertThrows(IllegalArgumentException.class, executable);
         Assertions.assertEquals("Number equal to 0", exception.getMessage());
     }
+    @Test
+    public void shouldThrowExceptionWhenInputLessThan0(){
+        Executable executable = () -> ListFactory.numberToList(-10);
+        IllegalArgumentException exception = Assertions.assertThrows(IllegalArgumentException.class, executable);
+        Assertions.assertEquals("Number less than 0", exception.getMessage());
+    }
 }
